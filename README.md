@@ -1,15 +1,5 @@
-# 👷 `worker-template` Hello World
+# 👷 Linktree Style Website
 
-A template for kick starting a Cloudflare worker project.
+This project uses Cloudflare workers to create a linktree-style website.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
-
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+Project Link: https://linktree-demo.lauragift.workers.dev

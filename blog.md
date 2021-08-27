@@ -365,7 +365,7 @@ You can use the `wrangler subdomain` command to configure a subdomain or use the
 
 This will generate a subdomain for your worker and deploy your worker every time your run `wrangler publish`. 
 
-![Screenshot 2021-08-27 at 11.01.32.png](Build%20a%20Linktree%20Site%20with%20Cloudflare%20Workers%20e48078d6cafe46a59678f3e276578bc5/Screenshot_2021-08-27_at_11.01.32.png)
+![Publish Worker Command](./images/publish.png)
 
 ## Wrapping Up
 

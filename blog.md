@@ -91,11 +91,11 @@ addEventListener("fetch", event => {
 })
 
 async function handleJSONRequest(request) {
-	const init = {
-		headers: {
-			'content-type': 'application/json'
-		}
-	}
+  const init = {
+    headers: {
+      'content-type': 'application/json'
+    }
+  }
   return new Response(JSON.stringify(links), init)
 }
 ```
@@ -112,8 +112,8 @@ Let's update the event handler to ensure the JSON response is only displayed whe
 
 ```jsx
 addEventListener("fetch", event => {
-	const url = new URL(event.request.url);
-	if (url.pathname.endsWith('/links')) {
+  const url = new URL(event.request.url);
+  if (url.pathname.endsWith('/links')) {
     event.respondWith(handleJSONRequest(event.request))
   }
 })
@@ -133,7 +133,7 @@ async function handleHTMLRequest(request) {
     },
   }
   const html = await fetch('https://static-links-page.signalnerve.workers.dev')
-	return new Response(html, init)
+  return new Response(html, init)
 }
 ```
 
@@ -175,10 +175,10 @@ class LinksTransformer {
   }
   
   async element(element) {
-		// target the selector we want to update and add a new a for each link
-		for (let link of links) {
-	      element.append(`<a href='${link.url}' target='_blank'>${link.name}</a>`, { html: true });
-	  }
+  // target the selector we want to update and add a new a for each link
+    for (let link of links) {
+      element.append(`<a href='${link.url}' target='_blank'>${link.name}</a>`, { html: true });
+    }
   }
 }
 async function handleHTMLRequest(request) {
@@ -188,7 +188,7 @@ async function handleHTMLRequest(request) {
     },
   }
   const html = await fetch('https://static-links-page.signalnerve.workers.dev')
-	// inside the on function we can target the selector and pass LinksTransformer element handler
+  // inside the on function we can target the selector and pass LinksTransformer element handler
   const rewriter = new HTMLRewriter()
     .on('div#links', new LinksTransformer(links))
     .transform(html)

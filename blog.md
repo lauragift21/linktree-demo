@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The web has evolved so much now that the possibilities are endless. In the past, when we needed to build a fully functional API, we had to spin up our servers. With the serverless architecture, we can now build APIs without managing our servers but rely on services that provide us with servers on-demand on an as-used basis.
+The web has evolved so much now that the possibilities are endless. In the past, when we needed to build a fully functional API, we had to spin up our servers. With serverless architecture, we can now build APIs without managing our servers but rely on services that provide us with servers on-demand on an as-used basis.
 
-This tutorial will build a linktree-like site with [Cloudflare Workers](https://workers.cloudflare.com/) and get our code deployed to servers across the globe that we can access in milliseconds.
+In this tutorial, we will build a linktree-like site with [Cloudflare Workers](https://workers.cloudflare.com/) and get our code deployed to servers across the globe that we can access in milliseconds.
 
 ## What is Cloudflare Workers?
 
